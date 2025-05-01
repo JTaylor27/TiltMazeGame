@@ -38,7 +38,10 @@ class GameActivity : AppCompatActivity(), SensorEventListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //AI Prompt - "How can I get the screen to lock while playing the game?"
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
         setContentView(R.layout.activity_game)
 
         mazeView = findViewById(R.id.mazeView)
@@ -52,6 +55,7 @@ class GameActivity : AppCompatActivity(), SensorEventListener {
         isTimerRunning = true
         timerHandler.post(timerRunnable)
 
+        //AI Prompt - "Can you help me send the time to the win screen once the player reaches the goal?"
         // Set maze win listener
         mazeView.listener = object : MazeView.MazeListener {
             override fun onGameWin(elapsedMillis: Long) {

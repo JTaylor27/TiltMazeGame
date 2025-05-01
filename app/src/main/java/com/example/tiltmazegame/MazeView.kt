@@ -12,6 +12,7 @@ import kotlin.math.min
 import java.util.Random
 
 // --- Maze Generator ---
+//AI Prompt - "What are some options for generating a maze in this project"
 class MazeGenerator(val rows: Int, val cols: Int) {
     private val maze = Array(rows) { IntArray(cols) { 1 } }  // All walls
 
@@ -76,6 +77,7 @@ class MazeView @JvmOverloads constructor(
     private val pathPaint = Paint().apply { color = Color.DKGRAY }
     private val goalPaint = Paint().apply { color = Color.GREEN }
 
+    //AI Prompt - "What is a good way to implement a ball into the maze"
     private val ballDrawable = ContextCompat.getDrawable(context, R.drawable.ball_shape)
 
     private var tileSize: Int = 0
