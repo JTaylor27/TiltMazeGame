@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aboutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_menu_background"
+    tools:context=".AboutActivity">
+
+    <!-- Title Text (About the Game) -->
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Tilt Maze Game\n\nTilt your phone to get the ball to the end goal as fast as possible!\n\nCreated by Josh Taylor"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/backToMenuButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <!-- Back to Menu Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backToMenuButton"
+        style="@style/BaseButtonStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutText"
+        app:layout_constraintVertical_bias="0.5" /> <!-- Adjust the vertical bias if needed -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

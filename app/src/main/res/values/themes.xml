@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.TiltMazeGame" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Material color palette -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primaryDark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <item name="colorSecondary">@color/accent_color</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+
+        <item name="android:statusBarColor">@color/primaryDark</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+</resources>
